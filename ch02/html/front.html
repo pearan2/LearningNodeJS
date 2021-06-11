@@ -1,0 +1,13 @@
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+	// 보통 AJAX 요청은 JQeury 나 axios 같은 라이브러리를 사용합니다.
+
+	axios.get('https://www.zerocho.com/api/get')
+		.then((result) => {
+			console.log(result);
+			console.log(result.data); // {}
+		})
+		.catch((error) => {
+			console.log(error);
+		});
+</script>
